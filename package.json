@@ -1,12 +1,13 @@
 {
   "name": "tuiter-node-server-app",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "description": "Node.js HTTP Web server for the Tuiter application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
