@@ -6,6 +6,14 @@ const createTuit = (req, res) => {
   newTuit._id = new Date().getTime() + "";
   newTuit.likes = 0;
   newTuit.liked = false;
+  newTuit.retuits = 0;
+  newTuit.replies = 1;
+  newTuit.username = "NASA";
+  newTuit.handle = "@NASA";
+  newTuit.time = "1h";
+  newTuit.title = "This is a title";
+  newTuit.topic = "NASA";
+
   tuits.push(newTuit);
   res.json(newTuit);
 };
