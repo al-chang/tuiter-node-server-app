@@ -13,6 +13,7 @@ const createTuit = (req, res) => {
   newTuit.time = "1h";
   newTuit.title = "This is a title";
   newTuit.topic = "NASA";
+  newTuit.image = "nasa.jpg";
 
   tuits.push(newTuit);
   res.json(newTuit);
