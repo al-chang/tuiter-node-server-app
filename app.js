@@ -4,9 +4,8 @@ import HelloController from "./controllers/hello-controller.js";
 import UserController from "./controllers/users/users-controller.js";
 import TuitsController from "./controllers/tuits/tuits-controller.js";
 import mongoose from "mongoose";
-import { MONGO } from "./db.js";
 
-mongoose.connect(process.env.MONGO || MONGO);
+mongoose.connect(process.env.MONGO);
 
 const app = express();
 
