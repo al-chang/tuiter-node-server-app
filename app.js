@@ -6,7 +6,7 @@ import TuitsController from "./controllers/tuits/tuits-controller.js";
 import mongoose from "mongoose";
 import { MONGO } from "./db.js";
 
-mongoose.connect(MONGO);
+mongoose.connect(process.env.MONGO || MONGO);
 
 const app = express();
 
